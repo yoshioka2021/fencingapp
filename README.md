@@ -1,24 +1,46 @@
-# README
+## 🤺Fenjoy
+# フェンシングプレイヤーみんなのためのアプリケーション
+## 🗣概要
+# マイナーで不便な部分のあるフェンシングをより快適にするアプリケーションです。
+フェンシングのプレイヤーに直接質問し、不便だと挙げられた試合の表について
+簡単に見れるように改良したアプリケーションです。試合形式の練習でぜひ活用して欲しいです。
+## 🔗URL
+https://fenjoy.herokuapp.com/
+## 👩‍💻利用方法
+## 課題解決
+|  課題                                |  課題解決                                   |
+| ----------------------------------- | ------------------------------------------ |
+| フェンシングの試合の記録用紙が見づらい!   | 人数と名前を入力するだけで対戦の順番が可視化できる! |
+| フェンシングのことについて話せる人が少ない | アウトプットができるように、お悩み投稿機能を実装しコメントをできるようにした。 |
+| 公開されるのが怖い                     | グループ機能を実装(フォローしている人しか入れない) |
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## 要件
+## 機能一覧
+ユーザー機能
+コメント機能
+グループ機能
+お悩み投稿機能(動画投稿機能)
+(フォロー機能)
+(試合順番表示機能)
+(試合結果一覧機能)
+(投稿者のみ閲覧できるメモ機能)
+(動画保存機能)
 
-Things you may want to cover:
+## DB設計
+## User
 
-* Ruby version
+|Column|Type|Options|
+|------------- |-------- |------------ |
+|nickname      | string  | null: false |
+|profile       | text    |             |
+|age           | integer |             |
+|event_id      | integer | null: false |
+|experience_id | integer | null: false |
 
-* System dependencies
 
-* Configuration
+### Association
 
-* Database creation
 
-* Database initialization
+## ローカルでの動作方法
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
